@@ -302,7 +302,7 @@ raccourcis["parcours_comm"] = {"valider" : "Return",
 raccourcis["suppres_triplets"] = {"valider" : "Return",
                                   "annuler" : "Escape"}
 try :
-    file = open("Parametres/labelisation.CONFIG_", "r")
+    file = open("Settings/labelisation.CONFIG_", "r")
     for line in file.readlines() :
         line.strip("\n")
         temp = line.split("=")
@@ -318,7 +318,7 @@ try :
             raccourcis[temp_[1]][temp_[2]] = value
     file.close()
 except :
-    file = open("Parametres/labelisation.CONFIG_", "x")
+    file = open("Settings/labelisation.CONFIG_", "x")
     default_settings = "taille_police=14\n"
     default_settings += "taille_police_review=18\n"
     default_settings += "interaction_spin=0\n"
@@ -352,7 +352,7 @@ def save_config():
         for bind in list(raccourcis[fen].keys()) :
             settings += "raccourcis.{}.{}={}\n".format(fen,bind,raccourcis[fen][bind])
     
-    file = open("Parametres/labelisation.CONFIG_", "w")
+    file = open("Settings/labelisation.CONFIG_", "w")
     file.write(settings)
     file.close()
 

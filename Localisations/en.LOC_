@@ -1,0 +1,249 @@
+# Language : en
+
+# Group 1 : Partition Creation Window
+1.1=Creation of partitions
+1.2=Number of reviews per partition :
+1.3=Length of reviews in partitions :
+1.4=Threshold of unsorted reviews :
+1.5=Override partitioning for this language
+1.6=Confirm rule
+1.7=Preview partitions
+1.8=Validate partition settings
+1.9=reviews
+
+# Group 2 : User Selection Window
+2.1=Select user
+2.2=Validate user
+2.3=Create new user
+2.4=Invalid user
+2.5=The user
+2.6=already exists.
+2.7=Please enter another free username.
+2.8=New user
+2.9=Validate new user
+
+# Group 3 : Partition Selection Window for labelisation
+3.1=Select the partitions to be labelled
+3.2=Select a partition for the language
+3.3=Validate the partition choices
+3.4=Reviews
+
+# Group 4 : Load Reviews Windows
+4.1=Load reviews
+4.2=Start loading
+4.3=Loading data ...
+4.4=Loading of
+
+# Group 5 : Characters Verification Window
+5.1=Check for characters not supported by Tkinter
+5.2=Start the check
+5.3=Proportion of unsupported characters
+5.4=in the loaded comments :
+5.5=- by characters :
+5.6=- by comments :
+5.7=Proceed to the loading of reviews
+
+# Group 6 : Partition Selection Window for curation
+6.1=Select the partition to be validated
+6.2=No partition can be validated.
+6.3=At least one partition with at least two users having annotated it is required.
+6.4=Select the partition to be validated:
+6.5=Confirm the choice
+
+# Group 7 : Labelisation Interface
+7.1=GUI Triplet labelling
+7.2=Non-existent aspect
+7.3=Non-existent opinion
+7.4=Proofreading
+7.5=Review
+7.6=Triplet Labelling
+7.7=Aspect
+7.8=Length of aspect :
+7.9=Aspect start index :
+7.10=Choose aspect word(s)
+7.11=Reset aspect
+7.12=Aspect word(s) :
+7.13=Aspect index(es) :
+7.14=Opinion
+7.15=Length of opinion :
+7.16=Opinion start index :
+7.17=Choose opinion word(s)
+7.18=Reset opinion
+7.19=Opinion word(s) :
+7.20=Opinion index(es) :
+7.21=Feeling :
+7.22=Negative
+7.23=Neutral
+7.24=Positive
+7.25=Change of
+7.26=Indexed by :
+7.27=Triplets
+7.28=Add triplet
+7.29=Edit triplet
+7.30=Delete triplets
+7.31=Validate the selection of triplet(s) for this comment and
+7.32=go to next review
+7.33=Change review language
+7.34=Change review after modifications
+7.35=Are you sure you want to change the review?
+7.36=This action will result in the loss of the current work.
+
+# Group 8 : Menu Bar
+8.1=Settings
+8.2=Change text size
+8.3=Reconfigure keyboard shortcuts
+8.4=Options
+8.5=Selecting in spinboxes
+8.6=Selecting with shortcuts
+8.7=Selecting in text
+8.8=Emergency mode
+8.9=Help
+8.10=Show keyboard shortcuts
+8.11=Display the number of labelled reviews and triplets
+8.12=Declare review inconsistent
+8.13=Change colours
+8.14=Vertical mode
+
+# Group 9 : Text Sizes Modification Window
+9.1=Change text size
+9.2=Size for explanatory text
+9.3=This is a sample text
+9.4=Size for comment text
+9.5=This is an example of a review
+
+# Group 10 : Bindings Modification Window
+10.1=Change Keyboard Shortcuts
+10.2=Main window
+10.3=Review selection window
+10.4=Browse reviews
+10.5=Change language
+10.6=View triplets
+10.7=Add triplets
+10.8=Delete triplicates
+10.9=Validate Triples
+10.10=Increase modification of indexes
+10.11=Decrease modification of indexes
+10.12=Spinbox selection - up
+10.13=Spinbox selection - left
+10.14=Spinbox selection - down
+10.15=Spinbox selection - right
+10.16=Change spinbox value - increase
+10.17=Change spinbox value - reduce
+10.18=Reset spinbox selection
+10.19=Validate review ID selection
+10.20=Cancel operation
+10.21=Validate choice of triplet(s)
+10.22=Reset triplet selection
+10.23=Delete triplets window
+
+# Group 11 : Labelisation Stats Window
+11.1=Number of reviews and triplets labelled
+11.2=The number of reviews and triplets labelled since the beginning of your work:
+11.3=Reviews
+11.4=Triplets
+
+# Group 12 : Oddities Window
+12.1=Are you sure you want to declare the review
+12.2=as inconsistent?
+
+# Group 13 : Error Windows
+13.1=Error in input
+13.2=Invalid triplet!
+13.3=You are creating impossible triplets:
+13.4=identical aspect and opinion
+13.5=same aspect/opinion pair with different feelings
+13.6=non-existent aspect and opinion associated with a feeling
+13.7=You are creating duplicates
+13.8=Unknown sentiment
+13.9=Unknown aspect and/or opinion
+13.10=Error in recording
+13.11=Your work could not be saved for some reason. Check if the file in which it should be saved is present.
+13.12=No triplet has been labelled. Cannot save without labelling at least one triplet.
+13.13=Selection error
+13.14=The ID of the selected review does not exist.
+
+# Group 14 : Suppresion & Modification Window
+14.1=Deletion of triplets
+14.2=Modify a triplet
+14.3=Validate
+14.4=Cancel
+14.5=Confirm deletion
+14.6=Are you sure you want to delete the following triplets?
+14.7=Confirm modification
+14.8=Are you sure you want to modify the following triplet?
+14.9=Triplet not validated
+14.10=Triplet ignored
+14.11=Omitted triplet to be edited
+
+# Group 15 : Triplets Visualisation Window
+15.1=Triplets visualization in the review
+15.2=Change the version of the review (current :
+15.3=new
+15.4=old
+15.5=Validate review version
+15.6=Confirm triplets in this comment
+15.7=Cancel and do not save
+15.8=The background colour is used to determine the feeling related to the triplet as follows:
+15.9=triplet with positive feeling
+15.10=triplet with negative feeling
+15.11=triplet with neutral feeling
+15.12=The colour of the words is only used to identify the opinions and aspects of the same triplet. Words belonging to several triplets will have several colours and associated feeling backgrounds.
+15.13=Aspects are written in italics while opinions are written in bold.
+15.14=Are you sure you want to keep
+15.15=the old
+15.16=the new one
+15.17=work done on this review?
+15.18=Confirmation of version
+15.19=Legend
+
+# Group 16 : Review Selection Window
+16.1=Select review to be labelled
+16.2=Not labelled
+16.3=Labeled
+16.4=Status of the review :
+16.5=Validate review selection
+
+# Group 17 : Curation Interface
+17.1=GUI Review validation
+17.2=Users
+17.3=to be validated
+17.4=validated
+17.5=Go to next triplet
+17.6=Revert to previous triplet
+17.7=Number of annotators who selected the word :
+17.8=Heatmap legend
+17.9=Progression
+17.10=You are at the review
+17.11=Change review to validate
+17.12=Curator
+17.13=Create a curator triplet
+17.14=Add a triplet omitted by annotators
+17.15=Delete a triplet
+17.16=Validate the chosen triplet
+17.17=Validate review
+
+# Group 18 : Colors Modification Window
+18.1=Change colours
+18.2=Colour for a triplet
+18.3=not validated
+18.4=validated
+18.5=ignored
+18.6=Colour for a review
+18.7=not labelled
+18.8=labeled
+18.9=ignored
+18.10=Status of review
+18.11=Unlabelled review :
+18.12=Labeled review :
+18.13=Ignored review :
+18.14=Status of triplet
+18.15=Triplet not validated :
+18.16=Triplet validated :
+18.17=Triplet ignored :
+18.18=Selection of a colour to replace
+18.19=Select a new colour
+18.20=Number of colours :
+18.21=Click here to select a colour
+18.22=Heatmap colours
+18.23=Delete colour
+18.24=Default colours

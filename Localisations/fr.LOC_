@@ -1,0 +1,249 @@
+# Language : fr
+
+# Group 1 : Partition Creation Window
+1.1=Création des partitions
+1.2=Nombre de commentaire par partition :
+1.3=Longueur des commentaires dans les partitions :
+1.4=Seuil de commentaires non triés :
+1.5=Ignorer le partitionnage pour cette langue
+1.6=Confirmer la règle
+1.7=Prévisualisation des partitions
+1.8=Valider les paramètres des partitions
+1.9=commentaires
+
+# Group 2 : User Selection Window
+2.1=Sélection de l'utilisateur
+2.2=Valider l'utilisateur
+2.3=Créer un nouveau utilisateur
+2.4=Utilisateur invalide
+2.5=L'utilisateur
+2.6=existe déjà.
+2.7=Veillez entrer un autre nom d'utilisateur libre.
+2.8=Nouveau utilisateur
+2.9=Valider le nouveau utilisateur
+
+# Group 3 : Partition Selection Window for labelisation
+3.1=Sélection des partitions à labéliser
+3.2=Sélectionnez une partition pour la langue
+3.3=Valider les choix des partitions
+3.4=Commentaires
+
+# Group 4 : Load Reviews Windows
+4.1=Charger les commentaires
+4.2=Débuter le chargement
+4.3=Chargement des données en cours ...
+4.4=Chargement de
+
+# Group 5 : Characters Verification Window
+5.1=Vérification des caractères non supportés par Tkinter
+5.2=Débuter la vérification
+5.3=Proportion de caractères non supportés
+5.4=dans les commentaires chargés :
+5.5=- par caractères :
+5.6=- par commentaires :
+5.7=Passer au chargement des comentaires
+
+# Group 6 : Partition Selection Window for curation
+6.1=Sélection de la partition à valider
+6.2=Aucune partition ne peut être validée.
+6.3=Il faut au moins une partition avec au moins deux utilisateurs l'ayant annotée.
+6.4=Sélectionnez la partition à valider :
+6.5=Valider le choix
+
+# Group 7 : Labelisation Interface
+7.1=GUI Labélisation des triplets
+7.2=Aspect inexistant
+7.3=Opinion inexistante
+7.4=Relecture
+7.5=Commentaire
+7.6=Labélisation du Triplet
+7.7=Aspect
+7.8=Longueur de l'aspect :
+7.9=Indexe de début de l'aspect :
+7.10=Choisir le(s) mot(s) de l'aspect
+7.11=Reset l'aspect
+7.12=Mot(s) de l'aspect :
+7.13=Indexe(s) de l'aspect :
+7.14=Opinion
+7.15=Longueur de l'opinion :
+7.16=Indexe de début de l'opinion :
+7.17=Choisir le(s) mot(s) de l'opinion
+7.18=Reset l'opinion
+7.19=Mot(s) de l'opinion :
+7.20=Indexe(s) de l'opinion :
+7.21=Sentiment :
+7.22=Négatif
+7.23=Neutre
+7.24=Positif
+7.25=Modification des
+7.26=indexes par :
+7.27=Triplets
+7.28=Ajouter le triplet
+7.29=Modifier un triplet
+7.30=Supprimer des triplets
+7.31=Valider la sélection de triplet(s) pour ce commentaire et
+7.32=passer au prochain commentaire
+7.33=Changer la langue des commentaires
+7.34=Changement de commentaire après modifications
+7.35=Etes-vous sûr(e) de vouloir changer de commentaire ?
+7.36=Cette action entraînera la perte du travail en cours.
+
+# Group 8 : Menu Bar
+8.1=Paramètres
+8.2=Changer la taille du texte
+8.3=Reconfigurer les raccourcis clavier
+8.4=Options
+8.5=Sélection dans les spinbox
+8.6=Sélection avec les racourcis
+8.7=Sélection dans le texte
+8.8=Mode de secours
+8.9=Aide
+8.10=Afficher les raccourcis clavier
+8.11=Afficher le nombre de commentaires et triplets labélisés
+8.12=Déclarer le commentaire incohérent
+8.13=Modification des couleurs
+8.14=Mode vertical
+
+# Group 9 : Text Sizes Modification Window
+9.1=Changer la taille du texte
+9.2=Taille pour le texte explicatif
+9.3=Ceci est un exemple de texte
+9.4=Taille pour le texte du commentaire
+9.5=Ceci est un exemple de commentaire
+
+# Group 10 : Bindings Modification Window
+10.1=Changer les raccourcis claviers
+10.2=Fenêtre principale
+10.3=Fenêtre de sélection de commentaire
+10.4=Parcourir les commentaires
+10.5=Changer de langue
+10.6=Visualiser les triplets
+10.7=Ajouter le triplets
+10.8=Supprimer des triplets
+10.9=Valider les triplets
+10.10=Augmenter la modification des indexes
+10.11=Diminuer la modification des indexes
+10.12=Sélection des spinbox - haut
+10.13=Sélection des spinbox - gauche
+10.14=Sélection des spinbox - bas
+10.15=Sélection des spinbox - droite
+10.16=Modifier la valeur de la spinbox - augmenter
+10.17=Modifier la valeur de la spinbox - réduire
+10.18=Reset de la sélection des spinbox
+10.19=Valider le choix de l'ID du commentaire
+10.20=Annuler l'opération
+10.21=Valider le choix du/des triplet(s)
+10.22=Reset de la sélection du triplet
+10.23=Fenêtre de suppression de triplets
+
+# Group 11 : Labelisation Stats Window
+11.1=Nombre de commentaires et triplets labélisés
+11.2=Voici les nombres de commentaires et triplets labélisés depuis le début de votre travail :
+11.3=Commentaires
+11.4=Triplets
+
+# Group 12 : Oddities Window
+12.1=Etes-vous sûr(e) de vouloir déclarer le commentaire
+12.2=comme incohérent ?
+
+# Group 13 : Error Windows
+13.1=Erreur de saisie
+13.2=Triplet invalide !
+13.3=Vous êtes en train de créer des triplets impossibles :
+13.4=aspect et opinion identiques
+13.5=même couple aspect/opinion avec des sentiment différents
+13.6=aspect et opinion inexistants associés à un sentiment
+13.7=Vous êtes en train de créer des doublons
+13.8=Sentiment inconnu
+13.9=Aspect et/ou opinion inconnu
+13.10=Erreur lors de l'enregistrement
+13.11=Votre travail n'a pas pu être enregistré pour une quelconque raison. Vérifiez si le fichier dans lequel il doit être enregistré est présent.
+13.12=Auncun triplet n'a été labélisé. Impossible de sauvegarder sans labéliser au moins un triplet.
+13.13=Erreur de sélection
+13.14=L'ID du commentaire sélectionné n'existe pas.
+
+# Group 14 : Suppresion & Modification Window
+14.1=Suppresion de triplets
+14.2=Modification d'un triplet
+14.3=Valider
+14.4=Annuler
+14.5=Confirmation de suppression
+14.6=Etes-vous sûr(e) de vouloir supprimer les triplets suivants :
+14.7=Confirmation de modification
+14.8=Etes-vous sûr(e) de vouloir modifier le triplet suivant :
+14.9=Triplet non validé
+14.10=Triplet ignoré
+14.11=Triplet omis à éditer
+
+# Group 15 : Triplets Visualisation Window
+15.1=Visualition des triplets dans le commentaire
+15.2=Changer la version du commentaire (actuelle :
+15.3=nouveau
+15.4=ancien
+15.5=Valider la version du commentaire
+15.6=Confirmer les triplets dans ce commentaire
+15.7=Annuler et ne pas sauvegarder
+15.8=La couleur de fond sert à déterminer le sentiment lié au triplet de la façon suivante :
+15.9=triplet dont le sentiment est positif
+15.10=triplet dont le sentiment est négatif
+15.11=triplet dont le sentiment est neutre
+15.12=La couleur des mots ne sert qu'à repérer les opinions et les aspects d'un même triplet. Les mots appartenant à plusieurs triplets auront plusieurs couleurs et les fonds des sentiments associés.
+15.13=Les aspects sont écrits en italique alors que les opinions sont écrites en gras.
+15.14=Etes-vous sûr(e) de vouloir conserver
+15.15=l'ancien
+15.16=le nouveau
+15.17=travail fait sur ce commentaire ?
+15.18=Confirmation de version
+15.19=Légende
+
+# Group 16 : Review Selection Window
+16.1=Sélection du commentaire à labéliser
+16.2=Non labélisé(s)
+16.3=Labélisé(s)
+16.4=Etat du commentaire :
+16.5=Valider le choix du commentaire
+
+# Group 17 : Curation Interface
+17.1=GUI Validation des comentaires
+17.2=Utilisateurs
+17.3=à valider
+17.4=validé
+17.5=Passer au prochain triplet
+17.6=Revenir au triplet précédent
+17.7=Nombre d'annotateurs ayant sélectionné le mot :
+17.8=Légende de la heatmap
+17.9=Progression
+17.10=Vous êtes au commentaire
+17.11=Changer de commentaire à valider
+17.12=Curateur
+17.13=Créer un triplet curateur
+17.14=Ajouter un triplet omis par les annotateurs
+17.15=Supprimer un triplet
+17.16=Valider le triplet choisi
+17.17=Valider le commentaire
+
+# Group 18 : Colors Modification Window
+18.1=Modifier les couleurs
+18.2=Couleur pour un triplet
+18.3=non validé
+18.4=validé
+18.5=ignoré
+18.6=Couleur pour un commentaire
+18.7=non labélisé
+18.8=labélisé
+18.9=ignoré
+18.10=Etat du commentaire
+18.11=Commentaire non labélisé :
+18.12=Commentaire labélisé :
+18.13=Commentaire ignoré :
+18.14=Etat du triplet
+18.15=Triplet non validé :
+18.16=Triplet validé :
+18.17=Triplet ignoré :
+18.18=Sélection d'une couleur pour remplacer
+18.19=Sélection d'une nouvelle couleur
+18.20=Nombre de couleurs :
+18.21=Cliquez ici pour choisir une couleur
+18.22=Couleurs de la heatmap
+18.23=Supprimer la couleur
+18.24=Couleurs par défaut

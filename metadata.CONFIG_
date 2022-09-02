@@ -1,5 +1,5 @@
-InputFilename=Hotel_Comments
-AvailableLanguage=fr;en
-InputDataDir=Data/Input_Data/
-OutputDataDir=Data/Created_Data/
-CuratedDataDir=Data/Curated_Data/
+InputFilename=
+AvailableLanguage=
+InputDataDir=Data//
+OutputDataDir=Data//
+CuratedDataDir=Data//

@@ -50,90 +50,6 @@ def get_metadata():
 #%% Functions to get all reviews from your dataset (GET_COMMS)
 #   and the lenght of a review (GET_COMM_LEN)
 
-def trouve_id_comm(texte):
-    id_comm = None
-    
-    temp = texte.split(",")
-    try :
-        int(temp[0].split(".")[0])
-        id_comm = temp[0].split(".")[0]
-    except :
-        None
-    
-    return (id_comm)
-
-def trouve_debut_comm(texte, lang="en"):
-    i_debut = None
-    
-    temp = texte.split(",")
-    ok_ = True
-    try :
-        if lang == "en" :
-            int(temp[0].split(".")[0])
-            int(temp[0].split(".")[1])
-        elif lang == "fr" :
-            int(temp[0])
-    except :
-        ok_ = False
-    if len(temp) != 1 and len(temp) >= 3 and ok_ == True :
-        i_debut = 0
-        target = 3
-        
-        if temp[2][0] == '"' :
-            while '"' not in temp[target] :
-                target += 1
-            target += 1
-        
-        for i in range(target) :
-            i_debut += len(temp[i])+1
-        
-        if temp[target][0] == '"' :
-            i_debut += 1
-    
-    return (i_debut)
-
-def trouve_fin_comm(texte, lang="en"):
-    i_fin = None
-    
-    temp = texte.split(",")
-    temp.reverse()
-    ok_ = True
-    if lang == "en" :
-        try :
-            float(temp[0])
-        except :
-            ok_ = False
-    elif lang == "fr" :
-        try :
-            int(temp[1])
-        except :
-            ok_ = False
-    if len(temp) != 1 and len(temp) >= 5 and ok_ == True:
-        i_fin = 0
-        temp.reverse()
-        ajust = 5
-        if lang == "fr" :
-            ajust += 1
-        for i in range(len(temp)-ajust) :
-            i_fin += len(temp[i])+1
-        i_fin -= 2
-        if lang == "fr" :
-            i_fin += 1
-    
-    return (i_fin)
-
-def get_real_comm_from_line(line, langue, num_comm, func_for_invalid_carac):
-    output = None
-    
-    id_comm = trouve_id_comm(line)
-    if id_comm != None :
-        i_deb = trouve_debut_comm(line, lang=langue)
-        i_fin = trouve_fin_comm(line, lang=langue)
-        if func_for_invalid_carac(line[i_deb:i_fin]) == False :
-            output = line[i_deb:i_fin]
-    
-    return (id_comm, output)
-
 def GET_COMM_LEN(comm, lang):
     """
     Parameters
@@ -155,9 +71,10 @@ def GET_COMM_LEN(comm, lang):
         whole line of the review data striped of surplus info to only keep the
         review.
     """
-    i_deb = trouve_debut_comm(comm, lang=lang)
-    i_fin = trouve_fin_comm(comm, lang=lang)
-    return (i_fin-i_deb)
+    ###########################################################################
+    # TODO : Put here your code
+    None
+    ###########################################################################
 
 def GET_COMMS(mode, lang, params, func_for_invalid_carac):
     """
@@ -237,7 +154,11 @@ def GET_COMMS(mode, lang, params, func_for_invalid_carac):
           the extracted review and returns a boolean. If it returns True, it
           means that such a character has been found in the text. Else, it
           returns False.
-        - 
+        - Remember : Tkinter can't process invalid characters, so if one is
+          found (i.e. func_for_invalid_carac(extracted_review) return True) in
+          a review, just ignore it and go to the next review.
+        - The code for mode == 'labelisation' and mode == 'validation' is the
+          same.
     """
     
     metadata = get_metadata()
@@ -254,36 +175,18 @@ def GET_COMMS(mode, lang, params, func_for_invalid_carac):
             if "_part" not in Filenames[lang] :
                 data = data[1:]
             
-            line = ""
-            k = 0
-            for element in data :
-                line += element
-                
-                temp = line.split(",")
-                elem_0_ok = True
-                elem_last_ok = True
-                try :
-                    float(temp[0])
-                except :
-                    elem_0_ok = False
-                if lang == "en" :
-                    try :
-                        float(temp[len(temp)-1])
-                        float(temp[len(temp)-3])
-                    except :
-                        elem_last_ok = False
-                elif lang == "fr" :
-                    if temp[len(temp)-1][:-1] not in ["train", "test", "valid"] :
-                        elem_last_ok = False
-                
-                if elem_0_ok == True and elem_last_ok == True :
-                    id_comm, comm = get_real_comm_from_line(line, lang, k, func_for_invalid_carac)
-                    if comm != None :
-                        comms[lang][id_comm] = comm
-                    progress_bar.step()
-                    progress_bar.update()
-                    line = ""
-                    k += 1
+            ###################################################################
+            # TODO : Put here your code
+            # Use the lines provided to load the reviews and update the progress bar
+            
+            id_comm, comm = "", ""
+            # 'id_comm' is the ID of the review
+            # 'comm' is the text of the review
+            
+            comms[lang][id_comm] = comm
+            progress_bar.step()
+            progress_bar.update()
+            ###################################################################
         
         elif mode == VALID :
             part = params[0]
@@ -295,36 +198,18 @@ def GET_COMMS(mode, lang, params, func_for_invalid_carac):
             if "_part" not in path :
                 data = data[1:]
             
-            line = ""
-            k = 0
-            for element in data :
-                line += element
-                
-                temp = line.split(",")
-                elem_0_ok = True
-                elem_last_ok = True
-                try :
-                    float(temp[0])
-                except :
-                    elem_0_ok = False
-                if lang == "en" :
-                    try :
-                        float(temp[len(temp)-1])
-                        float(temp[len(temp)-3])
-                    except :
-                        elem_last_ok = False
-                elif lang == "fr" :
-                    if temp[len(temp)-1][:-1] not in ["train", "test", "valid"] :
-                        elem_last_ok = False
-                
-                if elem_0_ok == True and elem_last_ok == True :
-                    id_comm, comm = get_real_comm_from_line(line, lang, k, func_for_invalid_carac)
-                    if comm != None :
-                        comms[id_comm] = comm
-                    progress_bar.step()
-                    progress_bar.update()
-                    line = ""
-                    k += 1
+            ###################################################################
+            # TODO : Put here your code
+            # Use the lines provided to load the reviews and update the progress bar
+            
+            id_comm, comm = "", ""
+            # 'id_comm' is the ID of the review
+            # 'comm' is the text of the review
+            
+            comms[lang][id_comm] = comm
+            progress_bar.step()
+            progress_bar.update()
+            ###################################################################
         
         elif mode == PART :
             Filenames = params[0]
@@ -336,34 +221,17 @@ def GET_COMMS(mode, lang, params, func_for_invalid_carac):
             if "_part" not in Filenames[lang] :
                 data = data[1:]
             
+            ###################################################################
+            # TODO : Put here your code
+            # Use the lines provided to load the reviews' info and update the progress bar
+            
             line = ""
-            k = 0
-            for element in data :
-                line += element
-                
-                temp = line.split(",")
-                elem_0_ok = True
-                elem_last_ok = True
-                try :
-                    float(temp[0])
-                except :
-                    elem_0_ok = False
-                if lang == "en" :
-                    try :
-                        float(temp[len(temp)-1])
-                        float(temp[len(temp)-3])
-                    except :
-                        elem_last_ok = False
-                elif lang == "fr" :
-                    if temp[len(temp)-1][:-1] not in ["train", "test", "valid"] :
-                        elem_last_ok = False
-                
-                if elem_0_ok == True and elem_last_ok == True :
-                    comms_var[lang]["text"].append(line)
-                    comms_var[lang]["len"].append(GET_COMM_LEN(line, lang))
-                    progress_bar.update()
-                    line = ""
-                    k += 1
+            # 'line' is the whole line of the review in the file
+            
+            comms_var[lang]["text"].append(line)
+            comms_var[lang]["len"].append(GET_COMM_LEN(line, lang))
+            progress_bar.update()
+            ###################################################################
 
 
 #%% Function to extract words from a review
@@ -387,4 +255,7 @@ def Word_Sep(text):
         the n-th word and the (n-1)-th word. This list begins with a 0.
     """
     
+    ###########################################################################
+    # TODO : Put here your code
     None
+    ###########################################################################
